@@ -1,4 +1,4 @@
-# Bypassing iOS code signature on Jailbreaked on iOS5 and maybe iOS6
+# Bypassing Apple code signature on Jailbreaked iOS5 and maybe iOS6
 
 - First, you need to add cydia repository
     - http://cydia.radare.org
