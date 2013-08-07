@@ -17,6 +17,7 @@ $ cd ios-build
 $ chmod +x gcc arch
 $ sudo cp gcc /usr/bin/
 $ sudo cp arch /usr/bin/
+$ sudo ln -s /usr/bin/gcc /usr/bin/cc
 $ sudo ldid -S /usr/bin/gcc
 $ sudo ldid -S /usr/bin/arch
 ~~~
