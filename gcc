@@ -1,0 +1,19 @@
+#!/bin/bash
+
+output='a.out'
+next=false
+for arg in "$@" ; do
+    if [ "$next" == "true" ]; then
+        output=$arg
+        break
+    elif [ "$arg" == "-o" ]; then
+        next="true"
+    fi
+done
+
+realgcc $*
+
+if [ -f "$output" ]; then
+    ldid -S "$output"
+    echo "Signed with ldid"
+fi
